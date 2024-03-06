@@ -7,6 +7,7 @@ const RunawayButton = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
     const handleMouseEnter = () => {
+        // @ts-ignore
         const parentRect = document.getElementById('parent').getBoundingClientRect();
         const randomX =  Math.random() * (parentRect.width - 200); // Adjust 200 based on button width
         const randomY =  Math.random() * (parentRect.height - 50); // Adjust 50 based on button height
