@@ -34,7 +34,7 @@ const NatureQuiz = () => {
             question: "Jakie miejsce jest uważane za duchowe centrum Indii?",
             options: ["Varanasi", "Delhi", "Rishikesh", "Agra"],
             answer: "Rishikesh"
-        }/*,
+        },
         {
             question: "Jakie zwierzę jest symbolem mądrości i duchowości w niektórych kulturach?",
             options: ["Orzeł", "Sowa", "Lew", "Wąż"],
@@ -272,7 +272,7 @@ const NatureQuiz = () => {
             question: "Które z poniższych miast słynie z kultury kawiarnianej i kanałów?",
             options: ["Paryż", "Amsterdam", "Berlin", "Wiedeń"],
             answer: "Amsterdam"
-        }*/
+        }
     ];
 
     const handleOptionSelect = (option:string) => {
