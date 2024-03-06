@@ -275,7 +275,7 @@ const NatureQuiz = () => {
         }
     ];
 
-    const handleOptionSelect = (option) => {
+    const handleOptionSelect = (option:string) => {
         setSelectedOption(option);
     };
 
