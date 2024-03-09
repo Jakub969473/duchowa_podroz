@@ -9,6 +9,7 @@ const RunawayButton = () => {
 
     // Get parent element's height on component mount
     React.useEffect(() => {
+        // @ts-ignore
         const parentRect = document.getElementById('parent').getBoundingClientRect();
         setPosition(prevPosition => ({
             x: parentRect.width /2 - 50,
