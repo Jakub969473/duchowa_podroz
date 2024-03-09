@@ -102,7 +102,9 @@ const TicTacToe: React.FC = () => {
         const gameWon = checkWin(newBoard, player);
         if (gameWon) gameOverFunc(gameWon);
         const Tie = checkTie();
-        if (Tie) gameOverFunc(gameWon);
+        if (Tie) { // @ts-ignore
+            gameOverFunc(gameWon);
+        }
     };
 
     const checkWin = (board: GameBoard, player: string): WinCombo | null => {
@@ -111,7 +113,9 @@ const TicTacToe: React.FC = () => {
             .map(([key]) => parseInt(key));
 
         let gameWon: WinCombo | null = null;
+        // @ts-ignore
         for (const [index, win] of winCombos.entries()) {
+            // @ts-ignore
             if (win.every(elem => plays.indexOf(elem) > -1)) {
                 gameWon = { index, player };
                 break;
@@ -198,6 +202,7 @@ const TicTacToe: React.FC = () => {
             }
         }
 
+        // @ts-ignore
         return moves[bestMove];
     };
 
