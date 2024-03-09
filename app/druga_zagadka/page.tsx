@@ -287,7 +287,7 @@ const NatureQuiz = () => {
         if (currentQuestion + 1 < questions.length) {
             setCurrentQuestion(currentQuestion + 1);
         } else {
-            window.location.replace("http://localhost:3000/trzecia_zagadka");
+            window.location.replace("/trzecia_zagadka");
         }
     };
 

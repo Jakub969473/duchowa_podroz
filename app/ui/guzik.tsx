@@ -1,10 +1,20 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './RunawayButton.module.css';
 
 const RunawayButton = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
+
+
+    // Get parent element's height on component mount
+    React.useEffect(() => {
+        const parentRect = document.getElementById('parent').getBoundingClientRect();
+        setPosition(prevPosition => ({
+            x: parentRect.width /2 - 50,
+            y: parentRect.height
+        }));
+    }, []);
 
     const handleMouseEnter = () => {
         // @ts-ignore
@@ -22,7 +32,7 @@ const RunawayButton = () => {
                 style={{ left: position.x, top: position.y }}
                 onMouseEnter={handleMouseEnter}
             >
-                Runaway Button
+                Dalej
             </button>
         </div>
     );

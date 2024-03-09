@@ -86,3 +86,19 @@ table tr td:last-child {
   color: white;
   font-size: 2em;
 }
+
+.container {
+  display: flex;
+  justify-content: flex-start; /* Align children (including image) to the start (left) of the container */
+  align-items: center; /* Center items vertically */
+  position: relative;
+}
+
+#image {
+  position: absolute;
+  opacity: 0.05; /* Set opacity to make the image transparent */
+  left: 100%; /* Position the image on the left side of the container */
+  top: calc(250%); /* Adjust top position as needed */
+}
+
+
