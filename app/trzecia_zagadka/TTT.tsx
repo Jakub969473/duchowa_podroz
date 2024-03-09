@@ -37,7 +37,7 @@ const TicTacToe: React.FC = () => {
         }
     };
 
-    const turnClick = (square?: number) => {
+    const turnClick = (square: number) => {
 
         if (!gameOver && typeof origBoard[square] === 'number') {
 
