@@ -2,7 +2,6 @@
 
 import Test from "@/app/ui/background";
 import { useState } from 'react';
-import TicTacToe from '@/app/trzecia_zagadka/TTT';
 
 export default function Home() {
     return (
