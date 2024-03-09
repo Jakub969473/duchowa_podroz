@@ -96,7 +96,7 @@ table tr td:last-child {
 
 #image {
   position: absolute;
-  opacity: 0.05; /* Set opacity to make the image transparent */
+  opacity: 0.1; /* Set opacity to make the image transparent */
   left: 100%; /* Position the image on the left side of the container */
   top: calc(250%); /* Adjust top position as needed */
 }
