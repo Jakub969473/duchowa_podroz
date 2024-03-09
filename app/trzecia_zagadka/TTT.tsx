@@ -102,8 +102,10 @@ const TicTacToe: React.FC = () => {
         const gameWon = checkWin(newBoard, player);
         if (gameWon) gameOverFunc(gameWon);
         const Tie = checkTie();
-        if (Tie) { // @ts-ignore
-            gameOverFunc(gameWon);
+        if (Tie) {
+            if (gameWon) {
+                gameOverFunc(gameWon);
+            }
         }
     };
 
